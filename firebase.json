@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "ogj-portfolio",
     "public": "dist",
     "ignore": [
       "firebase.json",

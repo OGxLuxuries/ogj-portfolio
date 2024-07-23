@@ -1,4 +1,4 @@
-import Topnav from "./Components/TopNav";
+import Topnav from "./TopNav";
 import { Outlet } from "react-router-dom";
 
 function Layout() {

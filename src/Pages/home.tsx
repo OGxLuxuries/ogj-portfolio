@@ -1,6 +1,10 @@
-import mypic from "./../images/";
-
+import mypic from "./../Images/headshot.jpg";
+import Card from "../Components/Card";
+import cardData from "../JSON/card_data.json"
 function Home() {
+
+  const johnDoeCard = cardData.find(card => card.title === "A.I. Research");
+
   return (
     <>
       <main className="main-content">
@@ -13,49 +17,32 @@ function Home() {
         </header>
 
         <section className="grid-container">
-          <section className="intro">
-            <h2>My Career</h2>
-            <p>
-              I am a second year studying{" "}
-              <span>Computing and Information Technologies</span>. I also work
-              part-time at RIT's Corner Store as a student manager.
-            </p>
-            <p>I have interests in:</p>
-            <ul>
-              <li>Data Analytics</li>
-              <li>Artificial Intelligence</li>
-              <li>Web Development</li>
-            </ul>
+          <section className="cards border">
+            <h2>Websites</h2>
+          {johnDoeCard && (
+                <>
+                    <Card
+                        link={johnDoeCard.link}
+                        thumbnail={johnDoeCard.thumbnail}
+                        title={johnDoeCard.title}
+                        description={johnDoeCard.description}
+                        technologies={johnDoeCard.technologies}
+                    />
+                    
+                </>
+            )}
           </section>
-          <section className="contact">
-            <h2>Contact</h2>
-            <p>
-              Email: <a href="mailto:odg1896@rit.edu">odg1896@rit.edu</a>
-            </p>
-            <p>Discord: ogluxuries</p>
-
-            <div className="contact-buttons">
-              <form
-                action="https://www.linkedin.com/in/oliver-gomes-jr/"
-                method="get"
-                target="_blank"
-              >
-                <button id="linkedin" type="submit">
-                  LinkedIn
-                </button>
-              </form>
-            </div>
+          <section className="recruiting border">
+            <h2>For Recruiters</h2>
+            <p>Resume download</p>
+            <button className="linkedin-button">LinkedIn Profile</button>
+          </section>
+          <section className="business border">
+            <h2>For Business Inquiries</h2>
+            <p>Google Form</p>
           </section>
 
-          <section className="personal">
-            <h2>Personal Life</h2>
-            <h3>Where am I from?</h3>
-            <p>
-              Waterbury, Connecticut, a.k.a. <em>The Brass City</em>
-            </p>
-            <h3>Sports</h3>
-            <p>I play golf.</p>
-          </section>
+          
         </section>
       </main>
     </>

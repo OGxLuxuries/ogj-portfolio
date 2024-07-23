@@ -1,0 +1,81 @@
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+.main-content {
+  max-width: 80vw;
+  margin: auto;
+  margin-bottom: 3em;
+}
+header {
+  padding: 0.5em;
+  margin-top: 4%;
+  text-align: center;
+  background-color: #74a4e4;
+  border-radius: 10px 10px 0 0;
+}
+hgroup {
+  margin: 1%;
+  color: white;
+}
+header img {
+  margin-top: 1em;
+  padding: 0.5em;
+  width: 300px;
+  border-radius: 60%;
+  border: 2px white dashed;
+}
+#my-name {
+  color: white;
+}
+.cards {
+	grid-area: cards;
+  
+}
+.business {
+	grid-area: business;
+}
+.recruiting {
+	grid-area: recruiting;
+}
+.grid-container {
+	display: grid;
+	grid-template-areas: 
+	'cards cards'
+	'recruiting business'
+	
+	;
+	gap: 10px;
+	background-color: white;
+	
+}
+.grid-container section {
+	color: #1a1a1a;
+  margin: 2% 4%;
+}
+h1,
+h2 {
+  text-transform: uppercase;
+  color: #004aad;
+  text-align: center;
+}
+
+.linkedin-button {
+  background-color: #0a66c2;
+  color: white;
+  padding: 0.5em;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.2em;
+  margin-top: 0.5em;
+  font-weight: 800;
+  border: 1px transparent solid;
+}
+
+.linkedin-button:hover {
+  cursor: pointer;
+  color: #0a66c2;
+  background-color: white;
+  border: 1px #0a66c2 solid;
+}

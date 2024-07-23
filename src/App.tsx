@@ -1,7 +1,7 @@
 import {HashRouter as Router, Routes, Route } from 'react-router-dom'
-import Home from './Pages/home.tsx'
-import Layout from './Layout.tsx'
-import './App.css'
+import Home from './Pages/Home.tsx'
+import Layout from './Components/Layout.tsx'
+import './CSS/App.css'
 
 function App() {
   

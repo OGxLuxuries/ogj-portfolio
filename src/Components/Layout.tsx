@@ -1,10 +1,10 @@
-import Topnav from "./TopNav";
+import Header from "./Header";
 import { Outlet } from "react-router-dom";
 
 function Layout() {
   return (
     <>
-      <Topnav />
+      <Header />
       <main>
         <Outlet />
       </main>

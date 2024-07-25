@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import logo from "../Images/OGJ Portfolio Logo.png";
-import "../CSS/TopNav.css"
+import "../CSS/Header.css"
 
-function TopNav() {
+function Header() {
   return (
     <>
       <nav className=" nav">
@@ -23,4 +23,4 @@ function TopNav() {
   );
 }
 
-export default TopNav;
+export default Header;

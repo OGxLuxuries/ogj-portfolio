@@ -1,20 +1,20 @@
 import { Link } from "react-router-dom";
 import logo from "../Images/OGJ Portfolio Logo.png";
-import "./TopNav.css"
+import "../CSS/TopNav.css"
 
 function TopNav() {
   return (
     <>
-      <nav className="border nav">
+      <nav className=" nav">
         <Link to="/">
-            <img src={logo} alt="logo" className="top-nav-logo border" />
+            <img src={logo} alt="logo" className="top-nav-logo " />
         </Link>
-        <div className="navigation ">
+        <div className="navigation">
         <Link to="/">
-          <button>Home</button>
+          <button >Home</button>
         </Link>
-        <Link to="/">
-          <button>Contact</button>
+        <Link to="/demo">
+          <button>Demo</button>
         </Link>
         </div>
         

@@ -7,18 +7,20 @@
   background-color: white;
   position: static;
   top: 0;
-  border-radius: 0 0  10px 10px;
+  border-radius: 0 0  15px 15px;
 }
 .top-nav-logo {
   width: 200px;
   margin-left: 10vw;
+  padding: 5px 0px
+
 }
 .navigation {
   margin-right: 10vw;
   font-size: 1.2em;
   display: flex;
-  column-gap: 20px;
-  justify-content: space-around;
+  column-gap: 5px;
+  justify-content: space-evenly;
   background-color: var(--light-blue);
   color: white;
   border-radius: 8px;

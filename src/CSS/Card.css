@@ -11,9 +11,9 @@
   }
   
   .card .card-image {
-    max-width: 60%;
+    min-width: 200px;
     height: auto;
-    border-radius: 50%;
+    
     margin-bottom: 10px;
   }
   

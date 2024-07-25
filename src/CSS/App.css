@@ -1,18 +1,37 @@
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
+
 .main-content {
   max-width: 80vw;
   margin: auto;
   margin-bottom: 3em;
 }
+.flex-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  padding: 2%;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
 header {
   padding: 0.5em;
   margin-top: 4%;
   text-align: center;
-  background-color: #74a4e4;
+  background-color: transparent;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  background-image: linear-gradient(
+	110deg,
+	#004bad9c,
+	rgba(255, 255, 255, 0.459)
+  );
+  
+  
+  border-top: 3px white solid;
   border-radius: 10px 10px 0 0;
 }
 hgroup {
@@ -21,13 +40,18 @@ hgroup {
 }
 header img {
   margin-top: 1em;
-  padding: 0.5em;
   width: 300px;
   border-radius: 60%;
-  border: 2px white dashed;
+  box-shadow: white 5px 5px 15px;
 }
 #my-name {
   color: white;
+}
+#my-name span {
+  padding: 0% 1%;
+  background-color: var(--dark-blue);
+  border-radius: 5px;
+
 }
 .cards {
 	grid-area: cards;
@@ -48,7 +72,7 @@ header img {
 	;
 	gap: 10px;
 	background-color: white;
-	
+  
 }
 .grid-container section {
 	color: #1a1a1a;

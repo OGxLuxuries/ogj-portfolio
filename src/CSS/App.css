@@ -46,7 +46,42 @@ button:focus-visible {
   outline: 8px auto -webkit-focus-ring-color;
 } */
 .main-content {
-  max-width: 80vw;
+  width: 80vw;
   margin: auto;
-  margin-bottom: 3em;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+.rounded {
+  border-radius: 10px;
+}
+.heading {
+  background-color: white;
+  padding: 1rem;
+  color: var(--light-blue);
+  margin-top: 1em;
+}
+
+.heading-wrapper {
+  background-color: var(--dark-blue);
+  color: var(--light-blue);
+}
+.heading-wrapper h2, p {
+  margin: 0.5rem;
+}
+.subheading {
+  background-color: var(--light-blue);
+  color: white;
+}
+.flex {
+  display: flex;
+  
+}
+.web-technologies img {
+  max-width: min(10vw, 100px);
+  max-height: min(10vw, 100px); 
+}
+
+.web-technologies {
+  overflow-x: auto;
+  flex-wrap: nowrap;
 }

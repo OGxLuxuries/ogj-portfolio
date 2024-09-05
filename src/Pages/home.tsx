@@ -1,42 +1,47 @@
 import Hero from "../Components/Hero";
 import Card from "../Components/Card";
 import projects from "../JSON/projects.json";
+import html_logo from "../Images/html-logo.png";
+import css_logo from "../Images/css3-logo.svg";
+import ts_logo from "../Images/ts-logo.png";
+import js_logo from "../Images/js-logo.png";
+import react_logo from "../Images/react-logo.png";
+import React, { useEffect } from "react";
 
 function Home() {
-
-
+  useEffect(() => {
+    document.title = "Home";
+  }, []);
 
   return (
     <>
       <main className="main-content">
         <Hero />
+        <div className="heading-wrapper rounded">
+          <div className="subheading rounded">
+            <h1 className="heading rounded">Websites</h1>
+            <h2>Made With:</h2>
+          </div>
 
-        <section className="grid-container">
-          <section className="cards border">
-            <h2>Websites</h2>
-            {projects.map((project, index) => (
-              <Card
-                key={index}
-                link={project.link}
-                thumbnail={project.thumbnail}
-                title={project.title}
-                description={project.description}
-                technologies={project.technologies}
-              />
-            ))}
-          </section>
-          <section className="recruiting border">
-            <h2>For Recruiters</h2>
-            <p>Resume download</p>
-            <button className="linkedin-button">LinkedIn Profile</button>
-          </section>
-          <section className="business border">
-            <h2>For Business Inquiries</h2>
-            <p>Google Form</p>
-          </section>
+          <div className="web-technologies flex-row">
+            <img src={html_logo} alt="html" />
+            <img src={css_logo} alt="css" />
+            <img src={js_logo} alt="javascript" />
+            <img src={ts_logo} alt="typescript" />
+            <img src={react_logo} alt="react" />
+          </div>
+        </div>
 
-          
-        </section>
+        {projects.map((project, index) => (
+          <Card
+            key={index}
+            link={project.link}
+            thumbnail={project.thumbnail}
+            title={project.title}
+            description={project.description}
+            
+          />
+        ))}
       </main>
     </>
   );

@@ -2,7 +2,10 @@ import {HashRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './Pages/Home.tsx'
 import Demo from './Pages/Demo.tsx'
 import Layout from './Components/Layout.tsx'
-import './CSS/App.css'
+import Resume from './Pages/Resume.tsx'
+import UnderConstruction from './Pages/UnderConstruction.tsx'
+
+
 
 
 function App() {
@@ -13,8 +16,10 @@ function App() {
     <Router>
       <Routes>
         <Route element={<Layout/>}>
-          <Route path="/" element={<Home />}/>
+          <Route path="/" element={<UnderConstruction />}/>
+          <Route path="/home" element={<Home />}/>
           <Route path="/demo" element={<Demo />}/>
+          <Route path="/resume" element={<Resume />}/>
         </Route>
       </Routes>
     </Router>

@@ -3,20 +3,18 @@
         "link": "https://ogj-ai-research-site.netlify.app/",
         "thumbnail": "/src/Images/ai-project.png",
         "title": "A.I. Research",
-        "description": "Personal Project",
-        "technologies": [
-            { "imgSrc": "../images/html-logo.png", "name": "HTML" },
-            { "imgSrc": "../images/css3-logo.png", "name": "CSS3" }
-        ]
+        "description": "Personal Project"
     },
     {
-        "link": "google.com",
-        "thumbnail": "path/to/thumb",
-        "title": "John Doe",
-        "description": "I am a software engineer who loves to code.",
-        "technologies": [
-            { "imgSrc": "path/to/tech3.png", "name": "Technology 3" },
-            { "imgSrc": "path/to/tech4.png", "name": "Technology 4" }
-        ]
+        "link": "https://dollhousestagingfl.com/",
+        "thumbnail": "/src/Images/dh-staging-thumb.png",
+        "title": "Home Staging Business",
+        "description": "Client - Dollhouse Staging"
+    },
+    {
+        "link": "https://kaynorarts.com/",
+        "thumbnail": "/src/Images/kaynorarts.png",
+        "title": "Fine Arts Showcase",
+        "description": "Client - Kaynor Tech HS"
     }
 ]

@@ -1,4 +1,4 @@
-.nav {
+header {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -8,9 +8,11 @@
   position: static;
   top: 0;
   border-radius: 0 0  15px 15px;
+  height: 16vh;
 }
 .top-nav-logo {
-  width: 200px;
+  height: 15vh;
+  aspect-ratio: 16/9;
   margin-left: 10vw;
   padding: 5px 0px
 

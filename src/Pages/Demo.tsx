@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import Card from "../Components/Card";
 
 function Demo() {
@@ -15,10 +15,10 @@ function Demo() {
                 thumbnail={"/src/Images/starting-line-ai.jpg"}
                 title={"Astronaut"}
                 description={"exploring space"}
-                technologies={[
-                    { "imgSrc": "path/to/tech3.png", "name": "Technology 3" },
-                    { "imgSrc": "path/to/tech4.png", "name": "Technology 4" }
-                ]}
+                // technologies={[
+                //     { "imgSrc": "path/to/tech3.png", "name": "Technology 3" },
+                //     { "imgSrc": "path/to/tech4.png", "name": "Technology 4" }
+                // ]}
               />
         </>
      );

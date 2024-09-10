@@ -6,7 +6,7 @@ import css_logo from "../Images/css3-logo.svg";
 import ts_logo from "../Images/ts-logo.png";
 import js_logo from "../Images/js-logo.png";
 import react_logo from "../Images/react-logo.png";
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 
 function Home() {
   useEffect(() => {

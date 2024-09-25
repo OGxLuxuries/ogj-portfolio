@@ -1,0 +1,39 @@
+.github-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 350px; /* Adjust width as needed */
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: auto; /* Center the card */
+  }
+  
+  .github-title {
+    font-size: 24px; /* Title font size */
+    margin-bottom: 15px; /* Spacing below title */
+  }
+  
+  .github-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #24292e; /* GitHub's dark grey color */
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .github-button:hover {
+    background-color: #333; /* Slightly lighter grey on hover */
+  }
+  
+  .github-button:active {
+    background-color: #1a1d1f; /* Even darker when clicked */
+  }
+
+  h1 {
+    color: #1a1d1f
+  }

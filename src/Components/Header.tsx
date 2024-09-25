@@ -9,14 +9,14 @@ function Header() {
         <Link to="/">
             <img src={logo} alt="logo" className="top-nav-logo " />
         </Link>
-        <div className="navigation">
+        {/* <div className="navigation">
         <Link to="/">
           <button >Home</button>
         </Link>
         <Link to="/resume">
           <button>Resume</button>
         </Link>
-        </div>
+        </div> */}
         
         
       </header>

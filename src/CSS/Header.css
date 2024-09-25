@@ -1,22 +1,23 @@
 header {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center; /* Center contents horizontally */
+  align-items: center; /* Center contents vertically */
   max-width: 100vw;
   background-color: white;
   position: static;
   top: 0;
-  border-radius: 0 0  15px 15px;
+  border-radius: 0 0 15px 15px;
   height: 16vh;
 }
+
 .top-nav-logo {
   height: 15vh;
   aspect-ratio: 16/9;
-  margin-left: 10vw;
-  padding: 5px 0px
-
+  margin: 0; /* Remove left margin for centering */
+  padding: 5px 0; /* Maintain padding for spacing */
 }
+
 .navigation {
   margin-right: 10vw;
   font-size: 1.2em;
@@ -28,6 +29,7 @@ header {
   border-radius: 8px;
   padding: 5px 10px;
 }
+
 .navigation button {
   text-transform: uppercase;
   background-color: inherit;

@@ -11,11 +11,11 @@ function Demo() {
       }, []);
 
     const images = [
-      '../../public/frat-fogo.png',
-      '../../public/sip-scout.png',
-      '../../public/og-customs.png',
-      '../../4q-1.png',
-      '../../4q-2.png'
+      'frat-fogo.png',
+      'sip-scout.png',
+      'og-customs.png',
+      '4q-1.png',
+      '4q-2.png'
 
 
 
@@ -42,7 +42,7 @@ function Demo() {
               <ImageSlider images={images} interval={2250} />
               <LinkedInCard 
                   profileUrl={"https://www.linkedin.com/in/olivergomesjr/"} 
-                  headshotUrl={"../Images/headshot-li.jpg"} 
+                  headshotUrl={"headshot.jpg"} 
                   name={"Oliver Gomes Jr."} 
                 />
         </>

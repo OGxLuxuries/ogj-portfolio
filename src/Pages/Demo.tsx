@@ -42,7 +42,7 @@ function Demo() {
               <ImageSlider images={images} interval={2250} />
               <LinkedInCard 
                   profileUrl={"https://www.linkedin.com/in/olivergomesjr/"} 
-                  headshotUrl={"../../public/headshot.jpg"} 
+                  headshotUrl={"../Images/headshot-li.jpg"} 
                   name={"Oliver Gomes Jr."} 
                 />
         </>

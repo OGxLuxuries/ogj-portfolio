@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
 .under-construction {
     background-color: white;
     color: var(--light-blue);
@@ -10,6 +11,7 @@
     align-items: center;
     gap: 2em;
     text-align: center;
+    font-family: "Silkscreen", sans-serif;
   }
 
 .cog-slow {
@@ -26,4 +28,25 @@
 .cogs {
     display: flex;
     flex-flow: row nowrap;
+}
+
+button {
+    color: #74a4e4;
+    outline: 2px solid #74a4e4;
+    background-color: white;
+}
+
+button:hover, button:active {
+    color: white;
+    outline: none;
+    background-color: #74a4e4;
+}
+
+h1 {
+    font-weight: 400;
+    color: #74a4e4;
+    font-style: normal;
+}
+p {
+     color: #3769ab;
 }

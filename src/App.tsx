@@ -5,6 +5,7 @@ import Layout from './Components/Layout.tsx'
 import Resume from './Pages/Resume.tsx'
 import UnderConstruction from './Pages/UnderConstruction.tsx'
 import Fair from './Pages/Fair.tsx'
+import FavoriteMom from './Pages/FavoriteMom.tsx'
 
 
 
@@ -21,7 +22,8 @@ function App() {
           <Route path="/demo" element={<Demo />}/>
           <Route path="/resume" element={<Resume />}/>
           <Route path="/uc" element={<UnderConstruction />}/>
-          <Route path="/fair" element={<Fair />}></Route>          
+          <Route path="/fair" element={<Fair />}/>          
+          <Route path="/favorite-mom" element={<FavoriteMom />}/>
         </Route>
       </Routes>
     </Router>      

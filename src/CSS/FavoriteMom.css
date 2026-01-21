@@ -1,0 +1,162 @@
+:root {
+  --brand-pink: oklch(59.377% 0.27959 321.08);
+  --glass-bg: rgba(255, 255, 255, 0.4);
+  --glass-border: rgba(255, 255, 255, 0.5);
+  --card-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* --- MOBILE FIRST BASE --- */
+.bento-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* Single column for focus */
+  gap: 24px; /* Increased gap for a cleaner look */
+  padding: 20px;
+  max-width: 500px; /* Constrain mobile width for better readability */
+  margin: 0 auto;
+}
+
+.bento-item {
+  position: relative;
+  border-radius: 32px; /* Extra rounded for a modern 2026 feel */
+  overflow: hidden;
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--card-shadow);
+  transition: transform 0.3s ease;
+  height: 400px; /* Large, immersive image size for mobile */
+}
+
+.message-card {
+  height: auto;
+  min-height: 200px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: white; /* Contrast card for the message */
+}
+
+/* --- DESKTOP ADAPTATION --- */
+@media (min-width: 900px) {
+  .bento-grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 350px); /* Larger desktop rows */
+    max-width: 1200px;
+    gap: 30px;
+  }
+
+  .bento-item {
+    height: auto; /* Grid takes over height control */
+  }
+
+  .main-photo { grid-column: span 2; grid-row: span 2; }
+  .side-photo-1 { grid-column: span 1; grid-row: span 2; }
+}
+
+/* Glass Label Style */
+.glass-label {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;    /* Horizontal centering */
+  justify-content: center; /* Vertical centering */
+  text-align: center;
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.reveal-text {
+  font-size: clamp(2.5rem, 8vw, 4.5rem); /* Responsive font size */
+  font-weight: 800;
+  letter-spacing: -0.03em; /* Modern tight tracking */
+  line-height: 1.1;
+  margin-bottom: 16px;
+  background: linear-gradient(
+    to bottom right, 
+    oklch(60% 0.2 340), 
+    oklch(63.636% 0.2997 322.896)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-wrap: balance; /* Modern 2026 text balancing */
+}
+
+.subtitle {
+  font-size: clamp(1.1rem, 3vw, 1.5rem);
+  color: oklch(45% 0.02 0);
+  font-weight: 450;
+  max-width: 600px;
+  line-height: 1.5;
+  text-wrap: balance;
+  opacity: 0.9;
+}
+
+/* Add a subtle entrance animation to match the "reveal" class name */
+.hero-section {
+  animation: hero-fade-in 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes hero-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* --- Confetti Animation Addition --- */
+
+.confetti-container {
+  position: fixed; /* Stays in place during scroll */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none; /* Allows interaction with cards underneath */
+  z-index: 2000; /* High z-index to stay above glass cards and header */
+  overflow: hidden;
+}
+
+.confetti-piece {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: var(--color); /* Dynamically set in JSX */
+  top: -20px;
+  border-radius: 3px;
+  opacity: 0.8;
+  animation: fall-and-twirl var(--duration) var(--delay) infinite linear;
+}
+
+@keyframes fall-and-twirl {
+  0% {
+    transform: translateY(0) rotate(0deg) translateX(0);
+  }
+  25% {
+    transform: translateY(25vh) rotate(180deg) translateX(20px);
+  }
+  50% {
+    transform: translateY(50vh) rotate(360deg) translateX(-20px);
+  }
+  75% {
+    transform: translateY(75vh) rotate(540deg) translateX(20px);
+  }
+  100% {
+    transform: translateY(110vh) rotate(720deg) translateX(0);
+  }
+}

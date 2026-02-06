@@ -34,7 +34,7 @@ header {
   background: transparent;
   border: none;
   backdrop-filter: none;
-  color: oklch(40% 0.02 0);
+  color: var(--brand-blue);
 }
 
 .navigation button:hover {

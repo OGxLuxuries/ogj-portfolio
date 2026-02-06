@@ -1,16 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 :root {
-  /* Inherit the modern palette from FavoriteMom */
-  --brand-pink: oklch(70% 0.15 0);
-  --brand-blue: oklch(65% 0.12 250);
+  /* Palette derived from green-sweater-16x9.jpg */
+  --brand-pink: #624940; /* Dark Brown */
+  --brand-blue: #6a7280; /* Slate Gray */
   --glass-bg: rgba(255, 255, 255, 0.4);
   --glass-border: rgba(255, 255, 255, 0.3);
   
   font-family: "Inter", system-ui, sans-serif;
   line-height: 1.5;
-  color: oklch(20% 0.02 0);
-  background-color: oklch(98% 0.01 0);
+  color: #141818; /* Darkest Color */
+  background-color: #f9fafb; /* Light Screen */
+
+  /* Mappings for legacy/other variables */
+  --dark-blue: #23282a; /* Dark Slate */
+  --light-blue: #acafb9; /* Light Slate */
 }
 
 * {

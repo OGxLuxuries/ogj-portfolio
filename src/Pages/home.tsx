@@ -1,11 +1,11 @@
 import Hero from "../Components/Hero";
 import Card from "../Components/Card";
 import projects from "../JSON/projects.json";
-import html_logo from "../Images/html-logo.png";
-import css_logo from "../Images/css3-logo.svg";
-import ts_logo from "../Images/ts-logo.png";
-import js_logo from "../Images/js-logo.png";
-import react_logo from "../Images/react-logo.png";
+import html_logo from "../images/html-logo.png";
+import css_logo from "../images/css3-logo.svg";
+import ts_logo from "../images/ts-logo.png";
+import js_logo from "../images/js-logo.png";
+import react_logo from "../images/react-logo.png";
 import { useEffect } from "react";
 
 function Home() {

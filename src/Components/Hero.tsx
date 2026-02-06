@@ -1,4 +1,4 @@
-import mypic from "./../Images/headshot.jpg";
+import mypic from "./../images/headshot.jpg";
 
 import "../CSS/Header.css";
 import "../CSS/Hero.css";

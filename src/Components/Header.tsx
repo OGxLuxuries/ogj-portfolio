@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "../Images/OGJ Portfolio Logo.png";
+import logo from "../images/OGJ Portfolio Logo.png";
 import "../CSS/Header.css"
 
 function Header() {

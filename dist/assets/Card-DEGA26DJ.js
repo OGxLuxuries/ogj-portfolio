@@ -1,0 +1,1 @@
+import{j as s}from"./index-Cj11o2-X.js";function t({link:a,thumbnail:r,title:e,description:c}){return s.jsx(s.Fragment,{children:s.jsxs("div",{className:"card",children:[s.jsx("a",{href:a,children:s.jsx("img",{className:"card-image",src:r,alt:"site-thumbnail"})}),s.jsx("h2",{className:"card-title",children:e}),s.jsx("p",{className:"card-text",children:c})]})})}export{t as C};

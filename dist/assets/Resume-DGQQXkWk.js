@@ -1,0 +1,1 @@
+import{j as e}from"./index-Cj11o2-X.js";function t(){return e.jsx(e.Fragment,{children:e.jsxs("section",{className:"main-content grid-container rounded",children:[e.jsx("h1",{children:"Resume"}),e.jsx("embed",{src:"http://infolab.stanford.edu/pub/papers/google.pdf#toolbar=0&navpanes=0&scrollbar=0",type:"application/pdf",height:"100%",width:"100%"})]})})}export{t as default};

@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import greenSweaterImg from '../images/green-sweater-16x9.jpg';
+import LinkedinBadge from '../Components/LinkedinBadge';
 import '../CSS/Landing.css';
 
 const Landing: React.FC = () => {
@@ -30,6 +31,9 @@ const Landing: React.FC = () => {
           </nav>
         </div>
       </main>
+      <div style={{ marginTop: '2rem' }}>
+        <LinkedinBadge />
+      </div>
     </div>
   );
 };

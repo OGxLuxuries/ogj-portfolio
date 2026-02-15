@@ -15,7 +15,6 @@ function Home() {
         <div className="heading-wrapper rounded">
           <div className="subheading rounded">
             <h1 className="heading rounded">Websites</h1>
-            <h2>Made With:</h2>
           </div>
 
           

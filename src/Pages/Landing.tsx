@@ -31,9 +31,6 @@ const Landing: React.FC = () => {
           </nav>
         </div>
       </main>
-      <div style={{ marginTop: '2rem' }}>
-        <LinkedinBadge />
-      </div>
     </div>
   );
 };

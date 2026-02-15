@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import greenSweaterImg from '../images/green-sweater-16x9.jpg';
-import LinkedinBadge from '../Components/LinkedinBadge';
 import '../CSS/Landing.css';
 
 const Landing: React.FC = () => {
